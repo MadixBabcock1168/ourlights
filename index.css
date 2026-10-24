@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #590d22;
+}
+#status {
+    margin-top: 40px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #c9184a;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    text-align: center;
+}
+#presets {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+#customMessage {
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modes {
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#colorPicker {
+    color: white;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sliders {
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#color {
+    width: 50px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+button {
+    border: 2px solid white;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#color {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border: 3px solid white;
+  border-radius: 12px;
+  background: none;
+  cursor: pointer;
+}
+
+#color::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+#color::-webkit-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+#color::-moz-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+#customText {
+    height: 25px;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #ff4d6d;
+    color: white;
+}
+
+/* the selected mode / preset (app.js adds this class) */
+button.active {
+    background-color: #c9184a;
+    box-shadow: 0 0 0 3px #ffb3c1;
+}

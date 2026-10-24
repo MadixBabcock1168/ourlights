@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Makes it act like an app when added to her home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Our Lights">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <title>Our Lights</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- What the display is showing right now (optional) -->
+   <div id="status">
+    <p id="nowShowing">Now showing: I LOVE YOU</p>
+   </div>
+
+  <!-- Preset messages: add as many as you want, data-text is what shows on the LEDs -->
+  <div id="presets">
+    <button class="preset" data-text="I LOVE YOU">I Love You</button>
+    <button class="preset" data-text="10/27">10/27</button>
+    <button class="preset" data-text="1:07">1:07</button>
+  </div>
+
+  <!-- Custom message -->
+  <div id="customMessage">
+    <input type="text" id="customText" placeholder="Type a message..." maxlength="60">
+    <button id="sendText">Send</button>
+  </div>
+
+  <!-- Modes: keep the data-mode values exactly like this -->
+  <div id="modes">
+    <button class="mode" data-mode="text">Message</button>
+    <button class="mode" data-mode="hearts">Hearts</button>
+    <button class="mode" data-mode="rainbow">Rainbow</button>
+    <button class="mode" data-mode="clock">Clock</button>
+  </div>
+
+  <!-- Color -->
+  <div id="colorPicker">
+    <label for="color">Color</label>
+    <input type="color" id="color" value="#ff0066">
+
+    <label>
+      <input type="checkbox" id="rainbowText">
+      Rainbow text
+    </label>
+</div>
+
+  <!-- Sliders -->
+  <div id="sliders">
+    <label for="brightness">Brightness</label>
+    <input type="range" id="brightness" min="5" max="100" value="30">
+
+    <label for="speed">Speed</label>
+    <input type="range" id="speed" min="1" max="10" value="5">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
